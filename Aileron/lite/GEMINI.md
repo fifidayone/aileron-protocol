@@ -34,6 +34,7 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 
 ## 5. Editing Rules
 - Prefer targeted edits. Do not refactor unrelated code.
+- Do not perform cosmetic or style-only refactoring on working code unless requested.
 - Do not change routing, config, package files, global styles, schemas, contracts, permissions, CI/CD, deployment, or shared infrastructure unless directly requested or necessary for the fix.
 - Preserve comments, public APIs, naming, formatting, and user/worktree changes. Add comments only when the reason is non-obvious.
 - Prefer readable, boring, maintainable code over clever code.
@@ -56,6 +57,7 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 
 ## 8. Verification
 - Use the cheapest useful check: inspect for trivial edits, lint/typecheck for logic/import/config, targeted tests for behavior, render check for meaningful UI, build only when deploy-sensitive or requested.
+- Do not fix unrelated pre-existing lint, type, compiler, or build errors; report them only if they block verification.
 - Do not claim complete, fixed, passing, or verified unless current evidence supports it. If verification is skipped, say why.
 
 ## 9. Communication

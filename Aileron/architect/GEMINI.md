@@ -35,6 +35,7 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 ## 5. Editing Rules
 - Prefer targeted edits over whole-file rewrites when localized changes are enough. Do not refactor unrelated code.
 - Do not change routing, config, package files, global styles, schemas, contracts, permissions, CI/CD, deployment, or shared infrastructure unless requested, approved for major work, or required for correctness.
+- Preserve backward compatibility for public APIs and database schemas unless breaking changes are explicitly approved.
 - Preserve comments, public APIs, naming, formatting, runtime compatibility, and user/worktree changes. Add comments only when the reason is non-obvious.
 - Prefer readable, boring, maintainable code over clever code.
 - Do not add dependencies for convenience. Prefer installed libraries; inspect package/config first, explain necessity, verify compatibility, and prefer stable/LTS versions.
@@ -53,6 +54,7 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 ## 7. Clarification And Risk
 - For architecture, schemas, API contracts, auth, permissions, migrations, payments, CI/CD, infra, production data, and external systems, ask compact choice-based questions when the path is genuinely ambiguous.
 - Before changing shared behavior, identify callers, contracts, data ownership, migration path, rollback risk, and test coverage.
+- For database migrations, identify rollback capability before execution and verify migrations locally when the environment supports it.
 - Prefer small reversible changes with clear boundaries. Do not patch by guessing in complex diagnostics; keep symptom, hypothesis, check, result, next hypothesis.
 - Ask before destructive, hard-to-reverse, shared-state, externally visible, permission-changing, production-affecting, or user-work-overwriting actions.
 - Never bypass hooks/checks with `--no-verify` unless requested.

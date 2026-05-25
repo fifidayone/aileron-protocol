@@ -61,6 +61,7 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 
 ## 8. Verification
 - Use the cheapest useful method tied to the change, but prefer render check over production build for UI unless deploy behavior is at stake.
+- For visible UI changes, run/use the available local preview and browser tool to inspect desktop/mobile layout alignment before claiming rendered completion; if unavailable or not useful, say why.
 - For meaningful UI work, verify viewport, keyboard/focus path, console, overflow, long text, empty/loading/error states, mobile touch, and reduced motion when practical.
 - Do not invent commands. Inspect scripts/config first and run the smallest relevant command.
 - For UI reviews/audits, separate design critique from technical audit and prioritize by severity, impact, location, and concrete fix path.

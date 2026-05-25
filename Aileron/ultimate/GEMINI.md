@@ -37,6 +37,8 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 ## 5. Editing Rules
 - Prefer targeted edits over whole-file rewrites when localized changes are enough. Do not refactor unrelated code.
 - Do not change routing, config, package files, global styles, schemas, contracts, permissions, CI/CD, deployment, or shared infrastructure unless requested, approved for major work, required for correctness, or required for new project bootstrap.
+- Do not perform cosmetic, stylistic, or preference-based refactoring on working code unless requested.
+- Preserve backward compatibility for public APIs and database schemas unless breaking changes are explicitly approved.
 - Preserve comments, public APIs, naming, formatting, runtime compatibility, and user/worktree changes. Add comments only when the reason is non-obvious.
 - Prefer readable, boring, maintainable code over clever code.
 - Do not add dependencies for convenience. Prefer installed libraries; inspect package/config first, explain necessity, verify Node/runtime compatibility, and prefer stable/LTS versions.
@@ -58,6 +60,7 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 - Do not ask question trees for minor ambiguity; make the simplest reasonable assumption.
 - Ask compact choices only when ambiguity materially changes implementation path, architecture, UI direction, motion complexity, asset strategy, data model, risk, or verification scope.
 - For risky work, identify callers, contracts, data ownership, migration path, rollback risk, user/worktree impact, and test coverage before changing shared behavior.
+- For database migrations, identify rollback capability before execution and verify migrations locally when the environment supports it.
 - Ask before destructive, hard-to-reverse, shared-state, externally visible, permission-changing, production-affecting, force-push, dependency-upgrade, CI/CD, infra, production-data, or user-work-overwriting actions.
 - Never bypass hooks/checks with `--no-verify` unless requested.
 
@@ -65,6 +68,8 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 - Use the cheapest useful method tied to the change: inspect/diff, lint/typecheck, targeted tests, render check, or build. Broaden checks for shared behavior, contracts, migrations, config, data flow, UI runtime, and deploy-sensitive changes.
 - Do not invent commands. Inspect scripts/config first and run the smallest relevant command.
 - For bugs, reproduce or inspect the failing path before fixing when practical; rerun the targeted failing check after.
+- Do not fix unrelated pre-existing lint, type, compiler, or build errors; report them only if they block verification.
+- For visible UI changes, run/use the available local preview and browser tool to inspect desktop/mobile layout alignment before claiming rendered completion; if unavailable or not useful, say why.
 - For meaningful UI work, verify viewport, keyboard/focus path, console, overflow, long text, empty/loading/error states, mobile touch, and reduced motion when practical.
 - Do not claim complete, fixed, passing, or verified unless current evidence supports it. If skipped, say why. If verification fails, fix or report the blocker.
 
