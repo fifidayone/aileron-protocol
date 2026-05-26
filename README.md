@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Inter&size=20&pause=1000&color=F0EEEE&center=true&vCenter=true&width=700&lines=Precision+flight+control+for+AI+agents;Slim+token+waste;Eliminate+diagnostic+loops;Deploy+premium+UI+instantly" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Inter&size=20&pause=1000&color=94E2D5&center=true&vCenter=true&width=700&lines=Precision+flight+control+for+AI+agents;Minimize+wasteful+token+usage;Complete+small+tasks+in+a+flash;Execute+large+tasks+with+razor-sharp+precision" alt="Typing SVG" />
   </a>
 </p>
 
@@ -33,27 +33,27 @@
 
 <table align="center" width="100%">
   <tr>
-    <td width="20%" align="center">
+    <td width="20%" align="center" nowrap>
       <a href="#-why-aileron">
         <strong>💡 Why Aileron</strong>
       </a>
     </td>
-    <td width="20%" align="center">
+    <td width="20%" align="center" nowrap>
       <a href="#-task-optimized-profiles">
         <strong>⚡ Profiles</strong>
       </a>
     </td>
-    <td width="20%" align="center">
+    <td width="20%" align="center" nowrap>
       <a href="#-repository-structure">
         <strong>📂 Structure</strong>
       </a>
     </td>
-    <td width="20%" align="center">
+    <td width="20%" align="center" nowrap>
       <a href="#%EF%B8%8F-installation--setup">
         <strong>🛠️ Installation</strong>
       </a>
     </td>
-    <td width="20%" align="center">
+    <td width="20%" align="center" nowrap>
       <a href="#-license">
         <strong>📄 License</strong>
       </a>
@@ -99,7 +99,7 @@ Select the exact strictness and behavior profile your agent needs for the task:
     </td>
     <td width="33%" valign="top" align="center">
       <a href="Aileron/balanced/GEMINI.md">
-        <img src="https://img.shields.io/badge/-⚖️_Balanced_Profile-cbd8f7?style=for-the-badge&logoColor=white" alt="Balanced Profile" />
+        <img src="https://img.shields.io/badge/-⚖️_Balanced_Profile-1e66f5?style=for-the-badge&logoColor=white" alt="Balanced Profile" />
       </a>
       <br /><br />
       <p align="left"><b>Standard Development:</b> Sensible compromise. Inspects caller/callee context to prevent shallow fixes, planning only when multi-file risk is detected.</p>

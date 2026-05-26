@@ -1,12 +1,12 @@
 <a id="readme-top"></a>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:496275,100:79B5DB&height=220&section=header&text=Aileron%20Protocol&fontSize=70&fontAlignY=35&fontColor=F0EEEE" width="100%" alt="Aileron Protocol Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:121826,100:2B3A54&height=220&section=header&text=Aileron%20Protocol&fontSize=70&fontAlignY=35&fontColor=F0EEEE" width="100%" alt="Aileron Protocol Banner" />
 </p>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Inter&size=20&pause=1000&color=F0EEEE&center=true&vCenter=true&width=700&lines=ระบบควบคุมพฤติกรรม+AI+Agent;หยุด+Context+หลุดลอย;ประหยัด+Token+สูงสุด;สร้าง+UI+ระดับพรีเมียม" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Inter&size=20&pause=1000&color=94E2D5&center=true&vCenter=true&width=700&lines=%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1+AI+Agent+%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%A1%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B6%E0%B9%89%E0%B8%99;%E0%B8%A5%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89+Token+%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%B4%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%87;%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B9%87%E0%B8%81+%E0%B9%80%E0%B8%AA%E0%B8%A3%E0%B9%87%E0%B8%88%E0%B9%84%E0%B8%A7+%E0%B9%83%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B4%E0%B8%9A%E0%B8%95%E0%B8%B2;%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88+%E0%B9%80%E0%B8%89%E0%B8%B5%E0%B8%A2%E0%B8%9A%E0%B8%84%E0%B8%A1+%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B8%A2%E0%B8%B3%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B6%E0%B9%89%E0%B8%99" alt="Typing SVG" />
   </a>
 </p>
 
@@ -23,7 +23,7 @@
   <img src="https://img.shields.io/badge/-Gemini_3.1_Pro-fab387?style=for-the-badge&logo=google-gemini&logoColor=white" alt="Gemini 3.1 Pro" />
   <img src="https://img.shields.io/badge/-Claude_Sonnet_4.6-94e2d5?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Sonnet 4.6" />
   <img src="https://img.shields.io/badge/-Claude_Opus_4.6-b4befe?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Opus 4.6" />
-  <img src="https://img.shields.io/badge/-GPT--OSS-a6e3a1?style=for-the-badge" alt="GPT-OSS" />
+  <img src="https://img.shields.io/badge/-GPT--OSS-a6e3a1?style=for-the-badge&logo=openai&logoColor=white" alt="GPT-OSS" />
   <a href="LICENSE"><img src="https://img.shields.io/badge/-CC_BY--NC--SA_4.0-f5c2e7?style=for-the-badge&logo=creative-commons&logoColor=white" alt="CC BY-NC-SA 4.0" /></a>
 </div>
 
@@ -33,29 +33,29 @@
 
 <table align="center" width="100%">
   <tr>
-    <td width="20%" align="center">
-      <a href="#-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B2%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%B3%E0%B8%84%E0%B8%B1%E0%B8%8D">
-        <strong>💡 ที่มาและความสำคัญ</strong>
+    <td width="20%" align="center" nowrap>
+      <a href="#-why-aileron">
+        <strong>💡 Why Aileron</strong>
       </a>
     </td>
-    <td width="20%" align="center">
+    <td width="20%" align="center" nowrap>
       <a href="#-task-optimized-profiles">
-        <strong>⚡ โปรไฟล์พฤติกรรม</strong>
+        <strong>⚡ Profiles</strong>
       </a>
     </td>
-    <td width="20%" align="center">
+    <td width="20%" align="center" nowrap>
       <a href="#-%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%AA%E0%B8%A3%E0%B9%85%E0%B8%B2%E0%B8%87%E0%B9%82%E0%B8%9F%E0%B8%A5%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B9%8C">
-        <strong>📂 โครงสร้างโฟลเดอร์</strong>
+        <strong>📂 Structure</strong>
       </a>
     </td>
-    <td width="20%" align="center">
+    <td width="20%" align="center" nowrap>
       <a href="#%EF%B8%8F-%E0%B8%85%E0%B8%B2%E0%B8%A3%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B9%83%E0%B8%82%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99">
-        <strong>🛠️ การติดตั้ง</strong>
+        <strong>🛠️ Installation</strong>
       </a>
     </td>
-    <td width="20%" align="center">
+    <td width="20%" align="center" nowrap>
       <a href="#-license">
-        <strong>📄 สัญญาอนุญาต</strong>
+        <strong>📄 License</strong>
       </a>
     </td>
   </tr>
@@ -63,19 +63,19 @@
 
 ---
 
-## 💡 ที่มาและความสำคัญ
+## 🚀 Why Aileron?
 
 หงุดหงิดกับการ vibe coding บน Antigravity อยู่ใช่ไหม? อ่าน context ทั้งโปรเจกต์ทั้งที่แก้แค่บรรทัดเดียว วางแผนยาวเหยียดสำหรับงานง่ายๆ หรือติดลูปวนแก้บั๊กเดิมซ้ำไปเรื่อยๆ จน Time out เสียเวลา เสีย Token ไปเปล่าๆ
 
 **Aileron Protocol** เข้ามาแก้ปัญหานี้ตรงจุด — แยกกฎเป็น **5 โปรไฟล์ตามเป้าหมายของงาน** เลือกใช้เพื่อควบคุม Context ให้คลีน และป้องกัน Token รั่วไหล:
 
-| ตัวชี้วัด / ความสามารถ | ไม่ใช้ Aileron (Default Harness) | ใช้ Aileron Protocol | ประโยชน์สูงสุดสำหรับนักพัฒนา |
+| Feature / Metric | Default Harness | Aileron Protocol | Developer Benefit |
 | :--- | :---: | :---: | :--- |
-| **ความเร็ว** | 🐌 ช้า (มีพิธีการและขั้นตอนหนักเครื่อง) | ⚡ **กระชับ** (โหลดเฉพาะกฎที่จำเป็น) | วงจรพัฒนา (Dev Loop) ไวขึ้นชัดเจน |
-| **Token** | 💸 สิ้นเปลือง (อ่านไฟล์ไม่เกี่ยวข้องเยอะ) | 📉 **ฉลาด** (สลิมไฟล์เป้าหมายให้กระชับ) | Context คลีน ลดจำนวนการใช้ Token |
-| **UI** | 🧪 AI Slop (จัดวางสะเปะสะปะ สีสันมั่ว) | 🎨 **พรีเมียม** (ใช้ OKLCH, คุม Contrast) | หน้าตาสวยงามระดับโปรดักชันตั้งแต่แรก |
-| **Debug** | 🔄 วนลูปแก้จุดเดิมจน Time out | 🛑 **ปลอดภัย** (พลาด 2 ครั้ง หยุดรอรับคำสั่ง) | ไม่เสียโควตาการรันโดยเปล่าประโยชน์ |
-| **Safety** | ⚠️ ปรับเปลี่ยนโครงสร้างระบบเองโดยพละการ | 🏗️ **รู้ความเสี่ยง** (ตรวจสอบ caller ก่อนแก้) | ลดโอกาสการทำระบบหลักพัง |
+| **Latency** | 🐌 ช้า (process overhead หนัก) | ⚡ **กระชับ** (โหลดเฉพาะกฎที่จำเป็น) | Dev loop ไวขึ้นชัดเจน |
+| **Token Use** | 💸 สิ้นเปลือง (อ่าน context เกินจำเป็น) | 📉 **ฉลาด** (สลิม system files ให้กระชับ) | Context คลีน ค่าใช้จ่ายลด |
+| **UI Quality** | 🧪 AI Slop (ดีไซน์มั่วมาตามยถากรรม) | 🎨 **พรีเมียม** (OKLCH, strict hierarchy) | หน้าตาสวยระดับโปรดักชันตั้งแต่แรก |
+| **Debugging** | 🔄 วนลูปไม่จบ | 🛑 **ปลอดภัย** (พลาด 2 ครั้ง หยุดรอคำสั่ง) | ไม่เสียโควตารันเปล่าๆ |
+| **System Safety** | ⚠️ แก้โครงสร้างระบบเองโดยพลการ | 🏗️ **รู้ความเสี่ยง** (เช็ค caller ก่อนแก้) | ลดโอกาสทำระบบหลักพัง |
 
 > [!NOTE]
 > **การเข้ากันได้กับโมเดล:** Aileron ถูกปรับแต่งมาสำหรับทุกโมเดลบน Antigravity 2.0 แต่ถ้าอยากได้ประสิทธิภาพสูงสุดในทุกประเภทงาน แนะนำให้รันคู่กับ Gemini 3.5 Flash
@@ -86,7 +86,7 @@
 
 ## ⚡ Task-Optimized Profiles
 
-เลือกระดับความเข้มงวดและโปรไฟล์พฤทีพฤติกรรมที่เหมาะสมที่สุดสำหรับประเภทงานของคุณ:
+เลือกระดับความเข้มงวดและโปรไฟล์พฤติกรรมที่เหมาะสมที่สุดสำหรับประเภทงานของคุณ:
 
 <table width="100%">
   <tr>
@@ -95,21 +95,21 @@
         <img src="https://img.shields.io/badge/-⚡_Lite_Profile-a6e3a1?style=for-the-badge&logoColor=white" alt="Lite Profile" />
       </a>
       <br /><br />
-      <p align="left"><b>เน้นความรวดเร็วและคล่องตัว:</b> ข้ามขั้นตอนการวางแผน ช่วยให้แก้ไขโค้ดได้โดยตรงอย่างรวดเร็วโดยมีพิธีการเครื่องรบกวนน้อยที่สุด เหมาะกับการแก้บั๊กสั้น ๆ หรือการสำรวจโค้ดด่วน</p>
+      <p align="left"><b>เน้นความรวดเร็วและคล่องตัว:</b> ข้ามขั้นตอนการวางแผน ลุยแก้โค้ดตรงเป้าหมายได้ทันทีโดยลดแรงเสียดทานจากระบบ Harness ให้เหลือน้อยที่สุด เหมาะสำหรับงานแก้บั๊กด่วนและเขียนโค้ดสำรวจแนวทาง</p>
     </td>
     <td width="33%" valign="top" align="center">
       <a href="Aileron/balanced/GEMINI.md">
-        <img src="https://img.shields.io/badge/-⚖️_Balanced_Profile-cbd8f7?style=for-the-badge&logoColor=white" alt="Balanced Profile" />
+        <img src="https://img.shields.io/badge/-⚖️_Balanced_Profile-1e66f5?style=for-the-badge&logoColor=white" alt="Balanced Profile" />
       </a>
       <br /><br />
-      <p align="left"><b>การพัฒนามาตรฐานทั่วไป:</b> ความสมดุลที่ลงตัว ตรวจสอบโค้ดเชื่อมโยงรอบด้านเพื่อป้องกันการแก้ปัญหาแบบตื้น ๆ วางแผนเฉพาะเมื่อประเมินว่างานมีความเสี่ยงต่อหลายไฟล์</p>
+      <p align="left"><b>งานพัฒนามาตรฐานทั่วไป:</b> ทางเลือกที่สมดุลและสมเหตุสมผล อ่านโค้ดรอบด้านเพื่อป้องกันการแก้ปัญหาแบบตื้นเขิน และจะวางแผนเฉพาะเมื่อประเมินว่างานมีความเสี่ยงกระทบหลายไฟล์</p>
     </td>
     <td width="33%" valign="top" align="center">
       <a href="Aileron/studio/GEMINI.md">
         <img src="https://img.shields.io/badge/-🎨_Studio_Profile-cba6f7?style=for-the-badge&logoColor=white" alt="Studio Profile" />
       </a>
       <br /><br />
-      <p align="left"><b>งานฟรอนต์เอนด์และดีไซน์:</b> ใส่ใจคุณภาพหน้าตาเป็นพิเศษ บังคับใช้มาตราส่วนสเปซ ระยะอักษร จิตวิทยาเฉดสี OKLCH สถานะองค์ประกอบ UI ครบถ้วน และพรีวิวก่อนรายงานผล</p>
+      <p align="left"><b>งาน UI และความละเอียดทางดีไซน์:</b> เน้นงานภาพสุดประณีต บังคับคุมระยะสเปซ, มาตราส่วนอักษร, เฉดสี OKLCH, ทุกสถานะการใช้งานจริง และพรีวิวตรวจสอบการเรนเดอร์ เพื่อป้องกันงานสุกเอาเผากิน (AI slop)</p>
     </td>
   </tr>
   <tr>
@@ -118,14 +118,14 @@
         <img src="https://img.shields.io/badge/-🏗️_Architect_Profile-94e2d5?style=for-the-badge&logoColor=white" alt="Architect Profile" />
       </a>
       <br /><br />
-      <p align="left"><b>งานระบบและความเสถียร:</b> บังคับตรวจสอบ caller สัญญาต่อเชื่อม API และประเมินความเสี่ยงของการ Migrate ฐานข้อมูลหรือแก้โครงสร้างพื้นฐานแชร์หลักก่อนลงมือ</p>
+      <p align="left"><b>ความมั่นคงปลอดภัยของระบบ:</b> บังคับตรวจสอบผู้เรียกใช้โค้ด (Callers) วิเคราะห์ความสอดคล้องของ API และประเมินความเสี่ยงต่อฐานข้อมูลก่อนลงมือแก้ไขระบบหลักส่วนกลาง</p>
     </td>
     <td width="67%" valign="top" align="center" colspan="2">
       <a href="Aileron/ultimate/GEMINI.md">
         <img src="https://img.shields.io/badge/-👑_Ultimate_Profile-f9e2af?style=for-the-badge&logoColor=white" alt="Ultimate Profile" />
       </a>
       <br /><br />
-      <p align="left"><b>ฟีเจอร์ระดับสูงและงานเตรียมขึ้นจริง:</b> คุณภาพขั้นสูงสุด รวมการวิเคราะห์ความเสี่ยงระดับสถาปัตยกรรม (Architect) ความประณีต UI ระดับพรีเมียม (Studio) และลูปทดสอบที่เข้มงวดที่สุด</p>
+      <p align="left"><b>งานเตรียมขึ้น Production ระดับสูง:</b> คุณภาพการรันงานขั้นสูงสุด รวบรวมการวิเคราะห์ความเสี่ยงระดับ Architect, ความเนี๊ยบ UI สวยพรีเมียมของ Studio และลูปการตรวจสอบที่เข้มงวดที่สุดเข้าด้วยกัน</p>
     </td>
   </tr>
 </table>
