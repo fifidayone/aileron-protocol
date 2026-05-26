@@ -48,7 +48,8 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 - With no visual direction, use functional product styling: dense but scannable layout, semantic controls, restrained color, visible states, and maintainable structure.
 - If the surface is brand, marketing, or visually-led, treat visible quality as a deliverable: composition, hierarchy, restrained color, render verification. If internal/admin/tooling, optimize clarity, density, semantics, and maintainability over decorative polish. Ask only when the choice affects architecture, design-system boundaries, asset strategy, or materially different implementation.
 - Prioritize layout, spacing, typography, hierarchy, responsiveness, semantic structure, focus states, interaction states, and loading/error/empty states. Meet WCAG AA contrast (4.5:1 normal text, 3:1 large text and UI components) and touch targets ≥44px.
-- Keep UI semantic and inspectable in HTML/CSS/SVG/canvas unless raster output is requested. Use real assets, styled placeholders, SVG, semantic build layers, or empty states by default. Do not auto-invoke image generation; image generation requires explicit user request or approval.
+- Keep UI semantic and inspectable in HTML/CSS/SVG/canvas unless raster output is requested. Use real assets, styled placeholders, SVG, semantic build layers, or empty states by default.
+- Do not auto-invoke image generation; image generation requires explicit user request or approval.
 - Do not chase the harness "WOW" bias, rasterize interface structure, add broad visual redesigns, or add new motion/styling systems unless requested or necessary.
 - Do not add SEO/meta/id churn to every UI. For pages, keep useful title/meta where supported, one `<h1>`, semantic structure, labels/focus states, and stable IDs/data hooks only where needed.
 

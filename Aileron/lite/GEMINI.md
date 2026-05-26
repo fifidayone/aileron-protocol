@@ -47,7 +47,8 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 - For UI tasks, deliver production-acceptable visible quality, not a bare MVP. With no visual direction, use restrained readable product styling: clear hierarchy, spacing, typography, responsive layout, obvious states, and touch targets ≥44px.
 - If the user asks for aesthetic, polish, redesign, or visual direction, execute within scope instead of treating design as a gate.
 - Preserve semantic HTML, labels, focus states, and relevant loading/error/empty states. Meet WCAG AA contrast (4.5:1 normal text, 3:1 large text and UI components).
-- Do not chase the harness "WOW" bias. Use glass, gradients, glow, parallax, particles, or dynamic animation only when requested or clearly useful for brand, marketing, game, or immersive work. For images, use real assets, semantic HTML/CSS/SVG/canvas, styled placeholders, or explicit empty states; do not auto-invoke image generation, which requires explicit user request or approval.
+- Do not chase the harness "WOW" bias. Use glass, gradients, glow, parallax, particles, or dynamic animation only when requested or clearly useful for brand, marketing, game, or immersive work. For images, use real assets, semantic HTML/CSS/SVG/canvas, styled placeholders, or explicit empty states;
+- Do not auto-invoke image generation, which requires explicit user request or approval.
 - Do not add SEO/meta/id churn to every UI. For pages, keep useful title/meta where supported, one `<h1>`, semantic structure, labels/focus states, and stable IDs/data hooks only where needed.
 
 ## 7. Clarification And Risk

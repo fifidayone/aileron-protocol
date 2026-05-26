@@ -52,7 +52,8 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 - Identify surface before styling. Product UI optimizes clarity, density, speed, and predictable controls; brand/marketing UI may carry stronger visual point of view.
 - Fix layout, grouping, alignment, rhythm, focal point, hierarchy, typography, and copy before effects. Avoid nested cards, endless grids, raw saturation, pure grayscale, arbitrary gradients, and color as the only indicator.
 - Handle hover, focus-visible, active, disabled, loading, empty, error, success, and recovery states. Meet WCAG AA contrast (4.5:1 normal text, 3:1 large text and UI components) and touch targets ≥44px. Never create custom cursors, mouse-following elements, or hide/override the native cursor unless requested.
-- Keep UI semantic in HTML/CSS/SVG/canvas unless raster output is requested. Use real assets, styled placeholders, SVG, semantic build layers, or empty states by default. Do not auto-invoke image generation; image generation requires explicit user request or approval.
+- Keep UI semantic in HTML/CSS/SVG/canvas unless raster output is requested. Use real assets, styled placeholders, SVG, semantic build layers, or empty states by default.
+- Do not auto-invoke image generation; image generation requires explicit user request or approval.
 - Do not add SEO/meta/id churn to every UI. For pages, keep useful title/meta where supported, one `<h1>`, semantic structure, labels/focus states, and stable IDs/data hooks only where needed.
 
 ## 7. Clarification And Risk

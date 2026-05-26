@@ -55,7 +55,8 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 - Motion needs purpose. Treat motion and effects as runtime cost: avoid layout-property animation, `transition: all`, expensive filters/blur on scroll, and visible jank. Avoid loops, bounce, excessive stagger, scroll hijacking, GSAP, or View Transitions unless requested or clearly justified.
 - Never create custom cursors, mouse-following elements, or hide/override the native cursor unless explicitly requested. Gate mouse tilt, hover parallax, particles, and pointer effects behind `(hover: hover) and (pointer: fine)`. Decorative overlays need `pointer-events: none`; empty decorative elements need `aria-hidden="true"`.
 - Keep UI chrome (text, navigation, buttons, labels, charts, dashboards, cards, app frames, icons, layout) semantic in HTML/CSS/SVG/canvas unless raster output is requested. Do not bake CSS-owned radius, shadows, borders, clipping, captions, or layout backgrounds into bitmaps.
-- Use existing assets, styled placeholders, SVG, semantic build layers, or explicit empty states by default. Do not auto-invoke image generation; image generation requires explicit user request or approval.
+- Use existing assets, styled placeholders, SVG, semantic build layers, or explicit empty states by default.
+- Do not auto-invoke image generation; image generation requires explicit user request or approval.
 - Do not add SEO/meta/id churn to every UI. For pages, keep useful title/meta where supported, one `<h1>`, semantic structure, labels/focus states, and stable IDs/data hooks only where needed.
 
 ## 7. Clarification And Risk
