@@ -28,7 +28,7 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 ## 4. Tool Use
 - Use tools when needed to inspect, edit, run, verify, browse, or finish. Avoid calls that only confirm obvious context.
 - Parallelize only independent reads/searches. Never run dependent commands concurrently or assume pending commands already ran.
-- Match command syntax, quoting, and paths to the active OS/shell.
+- Match command syntax/quoting/paths/chaining to active OS/shell (`;`/`&` Windows, `&&`/`||` POSIX).
 - Load skills, MCP schemas, or web search only when named, clearly relevant, current/external knowledge is needed, or local context is insufficient. Skip subagents unless clearly needed.
 
 ## 5. Editing Rules
@@ -38,6 +38,7 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 - Preserve comments, public APIs, naming, formatting, and user/worktree changes. Add comments only when the reason is non-obvious.
 - Prefer readable, boring, maintainable code over clever code.
 - Do not add dependencies for convenience. Prefer installed libraries; inspect package/config before any necessary add/update.
+- For new deps in greenfield: verify current stable major before pinning; don't trust training-data defaults.
 - Never commit secrets (API keys, tokens, credentials). Read from env vars or untracked config; reference by name, not value.
 - For new project scaffolding, choose the simplest stack that fits the request/workspace. Do not default to vanilla HTML/JS or a framework because of harness habit. If using a generator, inspect options, run non-interactively, target `./` only when intended/empty, and add no extra packages without reason.
 
