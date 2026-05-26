@@ -35,7 +35,7 @@
   <tr>
     <td width="20%" align="center" nowrap>
       <a href="#-why-aileron">
-        <strong>💡 Why Aileron</strong>
+        <strong>🚀 Why Aileron</strong>
       </a>
     </td>
     <td width="20%" align="center" nowrap>
@@ -99,7 +99,7 @@
     </td>
     <td width="33%" valign="top" align="center">
       <a href="Aileron/balanced/GEMINI.md">
-        <img src="https://img.shields.io/badge/-⚖️_Balanced_Profile-1e66f5?style=for-the-badge&logoColor=white" alt="Balanced Profile" />
+        <img src="https://img.shields.io/badge/-⚖️_Balanced_Profile-cbd8f7?style=for-the-badge&logoColor=white" alt="Balanced Profile" />
       </a>
       <br /><br />
       <p align="left"><b>งานพัฒนามาตรฐานทั่วไป:</b> ทางเลือกที่สมดุลและสมเหตุสมผล อ่านโค้ดรอบด้านเพื่อป้องกันการแก้ปัญหาแบบตื้นเขิน และจะวางแผนเฉพาะเมื่อประเมินว่างานมีความเสี่ยงกระทบหลายไฟล์</p>
