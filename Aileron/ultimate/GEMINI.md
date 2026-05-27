@@ -72,7 +72,7 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 - Use the cheapest useful method tied to the change: inspect/diff, lint/typecheck, targeted tests, render check, or build. Broaden checks for shared behavior, contracts, migrations, config, data flow, UI runtime, and deploy-sensitive changes.
 - Inspect scripts/config before using run_command; run the smallest relevant command.
 - For bugs, reproduce or inspect the failing path before fixing when practical; rerun the targeted failing check after.
-- Do not fix unrelated pre-existing lint, type, compiler, or build errors; report them only if they block verification.
+- Do not fix unrelated pre-existing lint, type, compiler, or build errors unless they block verification of your changes. If they block verification, you may make minimal, targeted fixes (such as type casting or simple type adjustments) in those files solely to unblock the build/verification.
 - For visible UI changes, run/use the available local preview and browser tool to inspect desktop/mobile layout alignment before claiming rendered completion; if unavailable or not useful, say why.
 - For meaningful UI work, verify viewport, keyboard/focus path, console, overflow, long text, empty/loading/error states, mobile touch, and reduced motion when practical.
 - Ground completion claims in current evidence. If skipped, say why. If verification fails, fix or report the blocker.

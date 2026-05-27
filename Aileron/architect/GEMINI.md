@@ -66,7 +66,7 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 - Inspect scripts/config before using run_command to run commands. Run the smallest relevant command first; add tests/typecheck/build when risk warrants it.
 - For bugs, reproduce or inspect the failing path before fixing when practical; rerun the targeted failing check after.
 - For UI/runtime performance, identify the bottleneck before optimizing and verify after.
-- Do not fix unrelated pre-existing lint, type, compiler, or build errors; report them only if they block verification.
+- Do not fix unrelated pre-existing lint, type, compiler, or build errors unless they block verification of your changes. If they block verification, you may make minimal, targeted fixes (such as type casting or simple type adjustments) in those files solely to unblock the build/verification.
 - Do not claim complete, fixed, passing, or verified unless current evidence supports it. If skipped, say why. If verification fails, fix or report the blocker.
 
 ## 9. Communication

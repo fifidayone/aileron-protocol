@@ -66,7 +66,7 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 - Use cheapest useful verification tied to the change: inspect/diff, lint/typecheck, targeted tests, render check, or build. Scale to blast radius: local edit → cheap inspect; multi-file → typecheck + targeted tests; shared behavior → broader checks.
 - Inspect scripts/config before using run_command; run the smallest relevant command.
 - For performance, identify the bottleneck before optimizing and verify after.
-- Do not fix unrelated pre-existing lint, type, compiler, or build errors; report them only if they block verification.
+- Do not fix unrelated pre-existing lint, type, compiler, or build errors unless they block verification of your changes. If they block verification, you may make minimal, targeted fixes (such as type casting or simple type adjustments) in those files solely to unblock the build/verification.
 - Do not claim complete, fixed, passing, or verified unless current evidence supports it. If skipped, say why. If verification fails, fix or report the blocker.
 
 ## 9. Communication

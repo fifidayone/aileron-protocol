@@ -58,7 +58,7 @@ Scope: User-configurable behavior only; never override platform, safety, permiss
 
 ## 8. Verification
 - Use the cheapest check: inspect for trivial, lint/typecheck via run_command, targeted tests, render check, or build only when deploy-sensitive.
-- Do not fix unrelated pre-existing lint, type, compiler, or build errors; report them only if they block verification.
+- Do not fix unrelated pre-existing lint, type, compiler, or build errors unless they block verification of your changes. If they block verification, you may make minimal, targeted fixes (such as type casting or simple type adjustments) in those files solely to unblock the build/verification.
 - Do not claim complete, fixed, passing, or verified unless current evidence supports it. If skipped, say why.
 
 ## 9. Communication
