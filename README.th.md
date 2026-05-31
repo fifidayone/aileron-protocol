@@ -67,7 +67,7 @@
 
 หงุดหงิดกับการ vibe coding บน Antigravity อยู่ใช่ไหม? อ่าน context ทั้งโปรเจกต์ทั้งที่แก้แค่บรรทัดเดียว วางแผนยาวเหยียดสำหรับงานง่ายๆ หรือติดลูปวนแก้บั๊กเดิมซ้ำไปเรื่อยๆ จน Time out เสียเวลา เสีย Token ไปเปล่าๆ
 
-**Aileron Protocol** เข้ามาแก้ปัญหานี้ตรงจุด — แยกกฎเป็น **5 โปรไฟล์ตามเป้าหมายของงาน** เลือกใช้เพื่อควบคุม Context ให้คลีน และป้องกัน Token รั่วไหล:
+**Aileron Protocol** เข้ามาแก้ปัญหานี้ตรงจุด — แยกกฎเป็น **2 โปรไฟล์เฉพาะทาง** ได้แก่ **Core** (ตรรกะระบบ ความปลอดภัย วินัยการใช้คำสั่ง) และ **Design** (งานดีไซน์ สไตล์ลิ่ง กฎห้าม AI ดีไซน์ขยะ) เพื่อควบคุม Context ให้คลีน และประหยัด Token สูงสุด:
 
 | Feature / Metric | Default Harness | Aileron Protocol | Developer Benefit |
 | :--- | :---: | :---: | :--- |
@@ -84,48 +84,25 @@
 
 
 
-## ⚡ Task-Optimized Profiles
+## ⚡ โปรไฟล์เฉพาะทาง (Specialized Profiles)
 
-เลือกระดับความเข้มงวดและโปรไฟล์พฤติกรรมที่เหมาะสมที่สุดสำหรับประเภทงานของคุณ:
+เลือกโปรไฟล์พฤติกรรมที่เหมาะสมกับเป้าหมายของงานคุณ:
 
 <table width="100%">
   <tr>
-    <td width="33%" valign="top" align="center">
-      <a href="Aileron/lite/GEMINI.md">
-        <img src="https://img.shields.io/badge/-⚡_Lite_Profile-a6e3a1?style=for-the-badge&logoColor=white" alt="Lite Profile" />
+    <td width="50%" valign="top" align="center">
+      <a href="Aileron/Core/GEMINI.md">
+        <img src="https://img.shields.io/badge/-⚙️_Core_Profile-a6e3a1?style=for-the-badge&logoColor=white" alt="Core Profile" />
       </a>
       <br /><br />
-      <p align="left"><b>เน้นความรวดเร็วและคล่องตัว:</b> ข้ามขั้นตอนการวางแผน ลุยแก้โค้ดตรงเป้าหมายได้ทันทีโดยลดแรงเสียดทานจากระบบ Harness ให้เหลือน้อยที่สุด เหมาะสำหรับงานแก้บั๊กด่วนและเขียนโค้ดสำรวจแนวทาง</p>
+      <p align="left"><b>ตรรกะระบบและความปลอดภัย (Core Logic & Safety):</b> เน้นการเขียนโค้ดตรงเป้าหมาย (Codebase-first) ควบคุมวินัยการรันคำสั่ง (Command discipline) และลดการถามคำถามที่ไม่จำเป็น ปรับปรุงสิทธิ์การแก้ไข Lint/Type ในขอบเขตจำกัดเพื่อความเสถียร และลดปัญหาคำสั่งค้างบน Windows โดยเน้นใช้เครื่องมือภายในตัว</p>
     </td>
-    <td width="33%" valign="top" align="center">
-      <a href="Aileron/balanced/GEMINI.md">
-        <img src="https://img.shields.io/badge/-⚖️_Balanced_Profile-cbd8f7?style=for-the-badge&logoColor=white" alt="Balanced Profile" />
+    <td width="50%" valign="top" align="center">
+      <a href="Aileron/Design/GEMINI.md">
+        <img src="https://img.shields.io/badge/-🎨_Design_Profile-cba6f7?style=for-the-badge&logoColor=white" alt="Design Profile" />
       </a>
       <br /><br />
-      <p align="left"><b>งานพัฒนามาตรฐานทั่วไป:</b> ทางเลือกที่สมดุลและสมเหตุสมผล อ่านโค้ดรอบด้านเพื่อป้องกันการแก้ปัญหาแบบตื้นเขิน และจะวางแผนเฉพาะเมื่อประเมินว่างานมีความเสี่ยงกระทบหลายไฟล์</p>
-    </td>
-    <td width="33%" valign="top" align="center">
-      <a href="Aileron/studio/GEMINI.md">
-        <img src="https://img.shields.io/badge/-🎨_Studio_Profile-cba6f7?style=for-the-badge&logoColor=white" alt="Studio Profile" />
-      </a>
-      <br /><br />
-      <p align="left"><b>งาน UI และความละเอียดทางดีไซน์:</b> เน้นงานภาพสุดประณีต บังคับคุมระยะสเปซ, มาตราส่วนอักษร, เฉดสี OKLCH, ทุกสถานะการใช้งานจริง และพรีวิวตรวจสอบการเรนเดอร์ เพื่อป้องกันงานสุกเอาเผากิน (AI slop)</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="33%" valign="top" align="center">
-      <a href="Aileron/architect/GEMINI.md">
-        <img src="https://img.shields.io/badge/-🏗️_Architect_Profile-94e2d5?style=for-the-badge&logoColor=white" alt="Architect Profile" />
-      </a>
-      <br /><br />
-      <p align="left"><b>ความมั่นคงปลอดภัยของระบบ:</b> บังคับตรวจสอบผู้เรียกใช้โค้ด (Callers) วิเคราะห์ความสอดคล้องของ API และประเมินความเสี่ยงต่อฐานข้อมูลก่อนลงมือแก้ไขระบบหลักส่วนกลาง</p>
-    </td>
-    <td width="67%" valign="top" align="center" colspan="2">
-      <a href="Aileron/ultimate/GEMINI.md">
-        <img src="https://img.shields.io/badge/-👑_Ultimate_Profile-f9e2af?style=for-the-badge&logoColor=white" alt="Ultimate Profile" />
-      </a>
-      <br /><br />
-      <p align="left"><b>งานเตรียมขึ้น Production ระดับสูง:</b> คุณภาพการรันงานขั้นสูงสุด รวบรวมการวิเคราะห์ความเสี่ยงระดับ Architect, ความเนี๊ยบ UI สวยพรีเมียมของ Studio และลูปการตรวจสอบที่เข้มงวดที่สุดเข้าด้วยกัน</p>
+      <p align="left"><b>งานดีไซน์และความสวยงาม (Frontend & Aesthetics):</b> เขียนทับกฎดีไซน์แบบเก่าของแพลตฟอร์ม ควบคุมระยะห่าง สเปซ โทนสี Pantone 2026 Cloud Dancer และ OKLCH พร้อมทั้งสั่งแบนดีไซน์ขยะแบบเป็นรายการชัดเจน (Anti-slop) เพื่อให้ได้ UI คุณภาพพรีเมียมแต่ไม่รกรุกรัง</p>
     </td>
   </tr>
 </table>
@@ -136,16 +113,13 @@
 
 ## 📂 โครงสร้างโฟลเดอร์
 
-แต่ละโปรไฟล์จะแยกเป็นไฟล์ `GEMINI.md` อิสระ หยิบใช้งานง่าย:
+แต่ละโปรไฟล์จะแยกเป็นไฟล์ `GEMINI.md` อิสระ:
 
 ```text
 aileron-protocol/
 ├── Aileron/
-│   ├── lite/       └── GEMINI.md
-│   ├── balanced/   └── GEMINI.md
-│   ├── studio/     └── GEMINI.md
-│   ├── architect/  └── GEMINI.md
-│   └── ultimate/   └── GEMINI.md
+│   ├── Core/      └── GEMINI.md
+│   └── Design/    └── GEMINI.md
 ├── README.md
 ├── README.th.md
 └── LICENSE
@@ -161,8 +135,8 @@ aileron-protocol/
 
 ### 🌍 ติดตั้งแบบ Global (เป็นมาตรฐานทั้งเครื่อง)
 คัดลอกไฟล์โปรไฟล์ที่คุณเลือก (`GEMINI.md`) ไปวางที่:
-*   **Windows:** `<samp>%USERPROFILE%\.gemini\GEMINI.md</samp>`
-*   **macOS / Linux:** `<samp>~/.gemini/GEMINI.md</samp>`
+*   **Windows:** `%USERPROFILE%\.gemini\GEMINI.md`
+*   **macOS / Linux:** `~/.gemini/GEMINI.md`
 
 ### 📁 ติดตั้งแบบ Workspace (Override เฉพาะโปรเจกต์)
 คัดลอกไฟล์โปรไฟล์ไปวางไว้ในพื้นที่ทำงานของโปรเจกต์ของคุณ โดยเลือกทำข้อใดข้อหนึ่ง:

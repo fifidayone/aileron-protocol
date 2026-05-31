@@ -67,7 +67,7 @@
 
 When vibe coding on Antigravity, the default harness can easily get in the way. Agents end up over-reading context, over-planning simple edits, or stuck in endless loops repeating the same failed fixes.
 
-**Aileron Protocol** solves this by splitting rules into **five task-optimized profiles**. Choose the exact strictness you need, keep your context clean, and save tokens:
+**Aileron Protocol** solves this by splitting rules into **two specialized profiles**: **Core** (system logic, safety, execution discipline) and **Design** (aesthetics, styling, anti-slop guidelines).
 
 | Feature / Metric | Default Harness | Aileron Protocol | Developer Benefit |
 | :--- | :---: | :---: | :--- |
@@ -84,48 +84,25 @@ When vibe coding on Antigravity, the default harness can easily get in the way. 
 
 
 
-## ⚡ Task-Optimized Profiles
+## ⚡ Specialized Profiles
 
-Select the exact strictness and behavior profile your agent needs for the task:
+Select the behavior profile your agent needs for the task:
 
 <table width="100%">
   <tr>
-    <td width="33%" valign="top" align="center">
-      <a href="Aileron/lite/GEMINI.md">
-        <img src="https://img.shields.io/badge/-⚡_Lite_Profile-a6e3a1?style=for-the-badge&logoColor=white" alt="Lite Profile" />
+    <td width="50%" valign="top" align="center">
+      <a href="Aileron/Core/GEMINI.md">
+        <img src="https://img.shields.io/badge/-⚙️_Core_Profile-a6e3a1?style=for-the-badge&logoColor=white" alt="Core Profile" />
       </a>
       <br /><br />
-      <p align="left"><b>Speed & Agility:</b> Bypasses planning. Allows fast, direct code modifications with minimal harness friction. Best for quick bug fixes and exploratory coding.</p>
+      <p align="left"><b>Core Logic & Safety:</b> Codebase-first execution, strict planning restraints, debugging discipline, and command optimization. Restricts question trees and prevents Windows terminal/permission exhaustion by prioritizing native tools. Allows minor pre-existing lint/type fixes in modified files to ensure verification stability.</p>
     </td>
-    <td width="33%" valign="top" align="center">
-      <a href="Aileron/balanced/GEMINI.md">
-        <img src="https://img.shields.io/badge/-⚖️_Balanced_Profile-cbd8f7?style=for-the-badge&logoColor=white" alt="Balanced Profile" />
+    <td width="50%" valign="top" align="center">
+      <a href="Aileron/Design/GEMINI.md">
+        <img src="https://img.shields.io/badge/-🎨_Design_Profile-cba6f7?style=for-the-badge&logoColor=white" alt="Design Profile" />
       </a>
       <br /><br />
-      <p align="left"><b>Standard Development:</b> Sensible compromise. Inspects caller/callee context to prevent shallow fixes, planning only when multi-file risk is detected.</p>
-    </td>
-    <td width="33%" valign="top" align="center">
-      <a href="Aileron/studio/GEMINI.md">
-        <img src="https://img.shields.io/badge/-🎨_Studio_Profile-cba6f7?style=for-the-badge&logoColor=white" alt="Studio Profile" />
-      </a>
-      <br /><br />
-      <p align="left"><b>Frontend & Design:</b> Visual craft. Enforces clean spacing, typography scales, OKLCH colors, interactive states, and rendering checks. Minimizes AI slop.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="33%" valign="top" align="center">
-      <a href="Aileron/architect/GEMINI.md">
-        <img src="https://img.shields.io/badge/-🏗️_Architect_Profile-94e2d5?style=for-the-badge&logoColor=white" alt="Architect Profile" />
-      </a>
-      <br /><br />
-      <p align="left"><b>System Integrity:</b> Forces deep caller analysis, contract validation, and database migration risk assessment before editing shared systems.</p>
-    </td>
-    <td width="67%" valign="top" align="center" colspan="2">
-      <a href="Aileron/ultimate/GEMINI.md">
-        <img src="https://img.shields.io/badge/-👑_Ultimate_Profile-f9e2af?style=for-the-badge&logoColor=white" alt="Ultimate Profile" />
-      </a>
-      <br /><br />
-      <p align="left"><b>High-Stakes Production:</b> Maximum execution quality. Merges Architect-level risk checks, Studio-level premium UI aesthetics, and strict verification loops.</p>
+      <p align="left"><b>Frontend & Aesthetics:</b> Overrides the platform's rich-aesthetics defaults. Enforces clean spacing, Pantone 2026 Cloud Dancer palettes, and strict anti-slop rules (bans gradient text, ghost cards, raw saturation). Ensures high contrast and accessibility. Allows minor pre-existing lint/type fixes in modified files to ensure verification stability.</p>
     </td>
   </tr>
 </table>
@@ -141,11 +118,8 @@ Each profile is packaged as a standalone `GEMINI.md` file:
 ```text
 aileron-protocol/
 ├── Aileron/
-│   ├── lite/       └── GEMINI.md
-│   ├── balanced/   └── GEMINI.md
-│   ├── studio/     └── GEMINI.md
-│   ├── architect/  └── GEMINI.md
-│   └── ultimate/   └── GEMINI.md
+│   ├── Core/      └── GEMINI.md
+│   └── Design/    └── GEMINI.md
 ├── README.md
 ├── README.th.md
 └── LICENSE
@@ -161,8 +135,8 @@ Aileron profiles can be deployed **globally** (system-wide baseline) or **locall
 
 ### 🌍 Global Setup (System-wide default)
 Copy your preferred profile's `GEMINI.md` to:
-*   **Windows:** `<samp>%USERPROFILE%\.gemini\GEMINI.md</samp>`
-*   **macOS / Linux:** `<samp>~/.gemini/GEMINI.md</samp>`
+*   **Windows:** `%USERPROFILE%\.gemini\GEMINI.md`
+*   **macOS / Linux:** `~/.gemini/GEMINI.md`
 
 ### 📁 Workspace Setup (Project override)
 Place the rules inside your active project workspace using either option:
