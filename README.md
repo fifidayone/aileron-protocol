@@ -19,11 +19,6 @@
 
 <div align="center">
   <img src="https://img.shields.io/badge/-Antigravity_2.0-cba6f7?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity 2.0" />
-  <img src="https://img.shields.io/badge/-Gemini_3.5_Flash-f9e2af?style=for-the-badge&logo=google-gemini&logoColor=white" alt="Gemini 3.5 Flash" />
-  <img src="https://img.shields.io/badge/-Gemini_3.1_Pro-fab387?style=for-the-badge&logo=google-gemini&logoColor=white" alt="Gemini 3.1 Pro" />
-  <img src="https://img.shields.io/badge/-Claude_Sonnet_4.6-94e2d5?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Sonnet 4.6" />
-  <img src="https://img.shields.io/badge/-Claude_Opus_4.6-b4befe?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Opus 4.6" />
-  <img src="https://img.shields.io/badge/-GPT--OSS-a6e3a1?style=for-the-badge&logo=openai&logoColor=white" alt="GPT-OSS" />
   <a href="LICENSE"><img src="https://img.shields.io/badge/-CC_BY--NC--SA_4.0-f5c2e7?style=for-the-badge&logo=creative-commons&logoColor=white" alt="CC BY-NC-SA 4.0" /></a>
 </div>
 
