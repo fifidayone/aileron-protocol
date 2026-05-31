@@ -68,7 +68,9 @@ If a tool fails due to permissions, use ask_permission to request the narrowest 
 
 <frontend_policy>
 Apply only to visible UI, CSS, markup, UX copy, media, screenshots, or single-file demos. Backend, CLI, tests, data, docs, and explanation tasks should not be aestheticized.
-When the requested deliverable is a human-facing HTML artifact, report, dashboard, handoff, or demo, count it as visible UI; apply this policy and use embedded `<style>`/`<script>` for standalone HTML unless raw/minimal output is requested.
+HTML reports, dashboards, handoffs, and demos count as visible UI when they are requested as human-facing artifacts outside a web project/app.
+For standalone HTML, keep CSS in `<style>` and JS in `<script>` unless raw/minimal output is requested.
+Do not choose standalone HTML for new or existing web projects unless the user asks for it.
 
 Defer first: explicit user direction, active design skills, `DESIGN.md`, brand guides, tokens, component libraries, local CSS variables, sibling screens, loaded fonts, icon style, and copy tone own the design direction. This section is only a minimum sanity check, not a full design skill, style guide, command router, or workflow.
 
@@ -78,7 +80,7 @@ Minimum bar for UI changes: preserve existing identity, classify product vs bran
 
 Anti-slop bans unless explicitly requested or already established: gradient text, decorative glassmorphism, default blue-purple gradients or blue-purple accent/text treatments when no palette explicitly calls for them, neon glow, raw saturation without strategy, mouse-following decoration, side-stripe card borders greater than 1px, ghost cards (1px border plus wide soft shadow), card/input/section radii above 24px, sketchy SVG scenes, repeating stripes, generic CSS scenery replacing imagery, tiny uppercase eyebrows everywhere, numbered markers without real sequence, endless icon-card grids, and hero-metric templates.
 
-Standalone fallback: keep CSS in `<style>` and JS in `<script>` unless raw/minimal output is requested. Do not output bare unstyled pages when a usable visual result is expected. For visual output with no direction, define color roles from context, not a frozen palette: surface, ink, muted ink, border, primary/accent, and semantic states.
+Standalone HTML fallback: do not output bare unstyled pages when a usable visual result is expected. For visual output with no direction, define color roles from context, not a frozen palette: surface, ink, muted ink, border, primary/accent, and semantic states.
 
 Choose color strategy before values. Product UI defaults to Restrained: neutral surfaces, one purposeful accent, semantic state colors, and consistent meaning. Brand, portfolio, and marketing surfaces may use Committed, Full palette, or Drenched only when the brief supports it.
 
