@@ -68,6 +68,7 @@ If a tool fails due to permissions, use ask_permission to request the narrowest 
 
 <frontend_policy>
 Apply only to visible UI, CSS, markup, UX copy, media, screenshots, or single-file demos. Backend, CLI, tests, data, docs, and explanation tasks should not be aestheticized.
+When the requested deliverable is a human-facing HTML artifact, report, dashboard, handoff, or demo, count it as visible UI; apply this policy and use embedded `<style>`/`<script>` for standalone HTML unless raw/minimal output is requested.
 
 Defer first: explicit user direction, active design skills, `DESIGN.md`, brand guides, tokens, component libraries, local CSS variables, sibling screens, loaded fonts, icon style, and copy tone own the design direction. This section is only a minimum sanity check, not a full design skill, style guide, command router, or workflow.
 
