@@ -28,29 +28,19 @@
 
 <table align="center" width="100%">
   <tr>
-    <td width="20%" align="center" nowrap>
+    <td width="33%" align="center" nowrap>
       <a href="#-why-aileron">
         <strong>🚀 Why Aileron</strong>
       </a>
     </td>
-    <td width="20%" align="center" nowrap>
-      <a href="#-task-optimized-profiles">
-        <strong>⚡ Profiles</strong>
-      </a>
-    </td>
-    <td width="20%" align="center" nowrap>
+    <td width="33%" align="center" nowrap>
       <a href="#-repository-structure">
         <strong>📂 Structure</strong>
       </a>
     </td>
-    <td width="20%" align="center" nowrap>
+    <td width="34%" align="center" nowrap>
       <a href="#%EF%B8%8F-installation--setup">
         <strong>🛠️ Installation</strong>
-      </a>
-    </td>
-    <td width="20%" align="center" nowrap>
-      <a href="#-license">
-        <strong>📄 License</strong>
       </a>
     </td>
   </tr>
@@ -62,13 +52,13 @@
 
 When vibe coding on Antigravity, the default harness can easily get in the way. Agents end up over-reading context, over-planning simple edits, or stuck in endless loops repeating the same failed fixes.
 
-**Aileron Protocol** solves this by splitting rules into **two specialized profiles**: **Core** (system logic, safety, execution discipline) and **Design** (aesthetics, styling, anti-slop guidelines).
+**Aileron Protocol** solves this by enforcing codebase-first execution, strict debugging safeties, command discipline, and rigorous anti-slop styling rules directly in your system/workspace configuration (**GEMINI.md**).
 
 | Feature / Metric | Default Harness | Aileron Protocol | Developer Benefit |
 | :--- | :---: | :---: | :--- |
-| **Latency** | 🐌 Slow (process overhead) | ⚡ **Lean** (loads only target rules) | Faster dev loops |
-| **Token Use** | 💸 Heavy (over-reads context) | 📉 **Smart** (slims system files) | Clean context, lower cost |
-| **UI Quality** | 🧪 AI Slop (arbitrary design) | 🎨 **Premium** (OKLCH, strict hierarchy) | Polished design out-of-the-box |
+| **Latency** | 🐌 Slow (process overhead) | ⚡ **Lean** (compact ruleset) | Faster dev loops |
+| **Token Use** | 💸 Heavy (over-reads context) | 📉 **Smart** (slims instruction size) | Clean context, lower cost |
+| **UI Quality** | 🧪 AI Slop (arbitrary design) | 🎨 **Premium** (restrained UI defaults) | Polished design out-of-the-box |
 | **Debugging** | 🔄 Endless loops | 🛑 **Protected** (max 2 failures before prompt) | Saves wasted runs |
 | **System Safety** | ⚠️ Speculative changes | 🏗️ **Risk-Aware** (caller checks first) | Fewer breaking changes |
 
@@ -77,44 +67,16 @@ When vibe coding on Antigravity, the default harness can easily get in the way. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-## ⚡ Specialized Profiles
-
-Select the behavior profile your agent needs for the task:
-
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top" align="center">
-      <a href="Aileron/Core/GEMINI.md">
-        <img src="https://img.shields.io/badge/-⚙️_Core_Profile-a6e3a1?style=for-the-badge&logoColor=white" alt="Core Profile" />
-      </a>
-      <br /><br />
-      <p align="left"><b>Core Logic & Safety:</b> Codebase-first execution, strict planning restraints, debugging discipline, and command optimization. Restricts question trees and prevents Windows terminal/permission exhaustion by prioritizing native tools. Allows minor pre-existing lint/type fixes in modified files to ensure verification stability.</p>
-    </td>
-    <td width="50%" valign="top" align="center">
-      <a href="Aileron/Design/GEMINI.md">
-        <img src="https://img.shields.io/badge/-🎨_Design_Profile-cba6f7?style=for-the-badge&logoColor=white" alt="Design Profile" />
-      </a>
-      <br /><br />
-      <p align="left"><b>Frontend & Aesthetics:</b> Overrides the platform's rich-aesthetics defaults. Enforces clean spacing, Pantone 2026 Cloud Dancer palettes, and strict anti-slop rules (bans gradient text, ghost cards, raw saturation). Ensures high contrast and accessibility. Allows minor pre-existing lint/type fixes in modified files to ensure verification stability.</p>
-    </td>
-  </tr>
-</table>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ---
 
 ## 📂 Repository Structure
 
-Each profile is packaged as a standalone `GEMINI.md` file:
+The configuration file is packaged inside the `Aileron/` folder:
 
 ```text
 aileron-protocol/
 ├── Aileron/
-│   ├── Core/      └── GEMINI.md
-│   └── Design/    └── GEMINI.md
+│   └── GEMINI.md
 ├── README.md
 ├── README.th.md
 └── LICENSE
@@ -126,10 +88,10 @@ aileron-protocol/
 
 ## 🛠️ Installation & Setup
 
-Aileron profiles can be deployed **globally** (system-wide baseline) or **locally** (project-level override).
+Aileron can be deployed **globally** (system-wide baseline) or **locally** (project-level override).
 
 ### 🌍 Global Setup (System-wide default)
-Copy your preferred profile's `GEMINI.md` to:
+Copy `GEMINI.md` to:
 *   **Windows:** `%USERPROFILE%\.gemini\GEMINI.md`
 *   **macOS / Linux:** `~/.gemini/GEMINI.md`
 
@@ -146,7 +108,7 @@ Place the rules inside your active project workspace using either option:
 > trigger: always_on
 > ---
 > 
-> [Profile rules start here...]
+> [Rules start here...]
 > ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
