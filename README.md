@@ -1,77 +1,53 @@
 <a id="readme-top"></a>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:121826,100:2B3A54&height=220&section=header&text=Aileron%20Protocol&fontSize=70&fontAlignY=35&fontColor=F0EEEE" width="100%" alt="Aileron Protocol Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=venom&color=0:F87171,100:FCD34D&height=220&section=header&text=Aileron%20Protocol&fontSize=70&fontAlignY=50&fontColor=FFF7ED" width="100%" alt="Aileron Protocol Banner" />
 </p>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Inter&size=20&pause=1000&color=94E2D5&center=true&vCenter=true&width=700&lines=Precision+flight+control+for+AI+agents;Minimize+wasteful+token+usage;Complete+small+tasks+in+a+flash;Execute+large+tasks+with+razor-sharp+precision" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Inter&size=20&pause=1000&color=e2c08a&center=true&vCenter=true&width=700&lines=Precision+flight+control+for+AI+agents;Stop+wasting+quota+on+debug+loops;Reduce+unnecessary+context+reading;Zero+planning+overhead+for+simple+tasks" alt="Typing SVG" />
   </a>
 </p>
 
 <div align="center">
-  <a href="README.md"><img src="https://img.shields.io/badge/Language-English_🇺🇸-89dceb?style=for-the-badge&logo=translate&logoColor=black" alt="English"/></a>
-  <a href="README.th.md"><img src="https://img.shields.io/badge/Language-ภาษาไทย_🇹🇭-f2cdcd?style=for-the-badge&logo=translate&logoColor=black" alt="Thai"/></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/Language-English_🇺🇸-f4b393?style=for-the-badge&logo=translate&logoColor=black" alt="English"/></a>
+  <a href="README.th.md"><img src="https://img.shields.io/badge/Language-ภาษาไทย_🇹🇭-e8c5c8?style=for-the-badge&logo=translate&logoColor=black" alt="Thai"/></a>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="https://img.shields.io/badge/-Antigravity_2.0-cba6f7?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity 2.0" />
-  <a href="LICENSE"><img src="https://img.shields.io/badge/-CC_BY--NC--SA_4.0-f5c2e7?style=for-the-badge&logo=creative-commons&logoColor=white" alt="CC BY-NC-SA 4.0" /></a>
+  <img src="https://img.shields.io/badge/-Antigravity_2.0-c3b1e1?style=for-the-badge&logo=google&logoColor=black" alt="Antigravity 2.0" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/-CC_BY--NC--SA_4.0-e2c08a?style=for-the-badge&logo=creative-commons&logoColor=black" alt="CC BY-NC-SA 4.0" /></a>
 </div>
 
 <br />
 
----
+## Why Aileron?
 
-<table align="center" width="100%">
-  <tr>
-    <td width="33%" align="center" nowrap>
-      <a href="#-why-aileron">
-        <strong>🚀 Why Aileron</strong>
-      </a>
-    </td>
-    <td width="33%" align="center" nowrap>
-      <a href="#-repository-structure">
-        <strong>📂 Structure</strong>
-      </a>
-    </td>
-    <td width="34%" align="center" nowrap>
-      <a href="#%EF%B8%8F-installation--setup">
-        <strong>🛠️ Installation</strong>
-      </a>
-    </td>
-  </tr>
-</table>
+Vibe coding with Antigravity is powerful, but the default harness gets in the way more than you'd expect. Agents over-read context, create elaborate plans for minor edits, and get stuck retrying the same failing fix until they burn your quota.
 
----
+<br />
 
-## 🚀 Why Aileron?
+**Aileron Protocol** is a ready-made `GEMINI.md` you drop into your project or global config. It enforces strict boundaries on how your agent plans, debugs, reads files, and writes code.
 
-When vibe coding on Antigravity, the default harness can easily get in the way. Agents end up over-reading context, over-planning simple edits, or stuck in endless loops repeating the same failed fixes.
+<br />
 
-**Aileron Protocol** solves this by enforcing codebase-first execution, strict debugging safeties, command discipline, and rigorous anti-slop styling rules directly in your system/workspace configuration (**GEMINI.md**).
-
-| Feature / Metric | Default Harness | Aileron Protocol | Developer Benefit |
-| :--- | :---: | :---: | :--- |
-| **Latency** | 🐌 Slow (process overhead) | ⚡ **Lean** (compact ruleset) | Faster dev loops |
-| **Token Use** | 💸 Heavy (over-reads context) | 📉 **Smart** (slims instruction size) | Clean context, lower cost |
-| **UI Quality** | 🧪 AI Slop (arbitrary design) | 🎨 **Premium** (restrained UI defaults) | Polished design out-of-the-box |
-| **Debugging** | 🔄 Endless loops | 🛑 **Protected** (max 2 failures before prompt) | Saves wasted runs |
-| **System Safety** | ⚠️ Speculative changes | 🏗️ **Risk-Aware** (caller checks first) | Fewer breaking changes |
+| Behavior | Default Harness | With Aileron |
+| :--- | :--- | :--- |
+| **Planning** | Plans minor edits, creating unnecessary planning overhead | Skips planning on simple edits; plans only for structural risk |
+| **Context** | Scans broad directories, bloating context windows | Inspects target files first before searching |
+| **Debugging** | Retries failed fixes blindly until timeout | Stops after 2 failed cycles for human feedback |
+| **Safety** | Edits shared files speculatively, risking breakages | Checks caller files before editing shared APIs |
+| **Styling** | Spams generic gradients and saturated glassmorphism | Blocks decorative styling; enforces minimal color strategies |
 
 > [!NOTE]
-> **Model Compatibility:** Aileron is tuned for all models on Antigravity 2.0. We highly recommend Gemini 3.5 Flash for the absolute best performance across all of your tasks.
+> Aileron is fully compatible with all models on Antigravity 2.0. We recommend Gemini 3.5 Flash for the best balance of speed and reliability.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
----
-
-## 📂 Repository Structure
-
-The configuration file is packaged inside the `Aileron/` folder:
+## Repository Structure
 
 ```text
 aileron-protocol/
@@ -82,41 +58,34 @@ aileron-protocol/
 └── LICENSE
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Installation
 
+You can install Aileron **globally** for all projects or **locally** for a specific workspace.
 
+### Global Setup
 
-## 🛠️ Installation & Setup
+Copy `GEMINI.md` to your global configuration folder.
+* **Windows:** `%USERPROFILE%\.gemini\GEMINI.md`
+* **macOS / Linux:** `~/.gemini/GEMINI.md`
 
-Aileron can be deployed **globally** (system-wide baseline) or **locally** (project-level override).
+### Workspace Setup
 
-### 🌍 Global Setup (System-wide default)
-Copy `GEMINI.md` to:
-*   **Windows:** `%USERPROFILE%\.gemini\GEMINI.md`
-*   **macOS / Linux:** `~/.gemini/GEMINI.md`
-
-### 📁 Workspace Setup (Project override)
-Place the rules inside your active project workspace using either option:
-
-*   **Option A (Root):** Copy `GEMINI.md` directly to the project root.
-*   **Option B (Rules Dir):** Save the file as `.agents/rules/project-rules.md` (or any custom filename).
+Place `GEMINI.md` inside your active project directory. You have two options.
+* **Option A:** Copy the file directly to the root of your project.
+* **Option B:** Save the file in a custom directory like `.agents/rules/project-rules.md`.
 
 > [!IMPORTANT]
-> If using **Option B**, you must prepend the following trigger header to the file (leaving a blank line after the closing `---`):
+> If you choose Option B, you must add the following trigger header to the very top of the file. Ensure there is a blank line after the closing `---`.
 > ```markdown
 > ---
 > trigger: always_on
 > ---
-> 
+>
 > [Rules start here...]
 > ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
----
+## License
 
-## 📄 License
-
-Distributed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License**. See [LICENSE](LICENSE) for more details.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This project is distributed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License**. Please see [LICENSE](LICENSE) for more details.
