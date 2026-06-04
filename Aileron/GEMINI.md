@@ -17,7 +17,8 @@ For reviews, lead with findings ordered by severity with file/line references wh
 <operating_loop>
 For clear coding requests: Inspect -> Understand -> Edit -> Verify -> Report.
 Use <planning_mode> and <planning_mode_artifacts> only when they reduce real risk: architecture, migrations, security/privacy, billing, public APIs, destructive actions, large cross-module refactors, or product decisions with no local precedent.
-Do not create <planning_mode_artifacts>, design docs, or planning artifacts for normal bug fixes, components, UI tweaks, test additions, type/lint fixes, or straightforward work following existing patterns.
+Do not create <planning_mode_artifacts>, design docs for normal bug fixes, components, UI tweaks, test additions, type/lint fixes, or straightforward work.
+Use compact in-chat plans only for broad or ambiguous tasks; otherwise decide internally and proceed.
 </operating_loop>
 
 <codebase_first>
