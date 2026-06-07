@@ -26,24 +26,32 @@
 
 ## ทำไมต้อง Aileron?
 
-หงุดหงิดกับการ vibe coding บน Antigravity อยู่ใช่ไหม? Agent อ่าน context ทั้งโปรเจกต์ทั้งที่แก้แค่บรรทัดเดียว วางแผนยาวเหยียดสำหรับงานง่ายๆ ติดลูปวนแก้บั๊กเดิมซ้ำจนหมดเวลา ทำให้เสีย Token ไปเปล่าๆ
+ขัดใจกับการ vibe coding บน Antigravity 2.0 ใช่ไหม? ทั้งการกวาดอ่าน Context กว้างเกินงาน, บังคับสร้างแผนงานเยิ่นเย้อแม้แก้โค้ดนิดเดียว, วนแก้บั๊กเดิมซ้ำซากจนกลายเป็น Speculative Patching ไปจนถึงการยัดดีไซน์ AI Slop รกๆ ที่ไม่เข้ากับแนวทางของโปรเจกต์เลย
 
 <br />
 
-**Aileron Protocol** คือ `GEMINI.md` สำเร็จรูปที่วางลง project หรือ global config ได้เลย คุม behavior ของ agent ให้ plan น้อยลง อ่านน้อยลง และไม่วน debug loop
+**Aileron Protocol** คือชุดกฎ `GEMINI.md` สำเร็จรูปที่ทำหน้าที่เป็นตัวควบคุมพฤติกรรมให้กับ Antigravity 2.0 แค่วางลงในโปรเจกต์หรือ Global Config ก็สามารถคุม AI ให้อยู่ในร่องในรอย พร้อมตีกรอบเรื่อง Planning, Context, Debugging, Cost Control, Code Safety, Verification และงาน Frontend
 
 <br />
 
-| พฤติกรรม | Default Harness | ติดตั้ง Aileron แล้ว |
-| :--- | :--- | :--- |
-| **การวางแผน** | บังคับสร้าง plan ทุกงาน แม้แค่แก้โค้ดบรรทัดเดียว | ข้าม plan งานทั่วไป วางแผนเฉพาะงานที่กระทบ structure หลัก |
-| **การอ่านไฟล์** | อ่านไฟล์กว้างเกินจำเป็นจน context บวมเสีย token | อ่านเฉพาะไฟล์ที่เกี่ยวก่อน ไม่กวาดอ่านทั้ง repo |
-| **การ debug** | วน retry วิธีเดิมซ้ำจนโควตาหมดหรือ timeout | fix พลาด 2 รอบติดกัน หยุดและแจ้ง user ทันที |
-| **Safety** | แก้ shared file โดยไม่เช็คผลกระทบ | เช็ค caller ก่อนแก้ shared API ทุกครั้ง |
-| **ดีไซน์ UI** | สาดสีสุ่มไล่เฉดรกสายตาสไตล์ AI Slop | บล็อก effect รกสายตา คุม color strategy อย่างเป็นระบบ |
+| พฤติกรรม            | Default Harness                                                         | ติดตั้ง Aileron แล้ว                                                                        |
+| :------------------ | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
+| **การวางแผน**       | บังคับสร้าง plan ทุกงาน แม้แก้โค้ดแค่บรรทัดเดียว                        | ข้ามขั้นตอนวางแผนในงานทั่วไป จำกัดการใช้ Formal Plan เฉพาะงานสถาปัตยกรรมหลัก                |
+| **การอ่าน Context** | กวาดค้นหาโค้ดกว้างเกินจำเป็นจนเกิดอาการ Context บวม                     | เจาะจงตรวจสอบจากไฟล์เป้าหมาย โค้ดรอบข้าง คอนฟิก และ Conventions ของ Repository ก่อน         |
+| **การ Debug**       | พยายามแก้บั๊กซ้ำๆ จนกลายเป็นการทำ Speculative Patching                  | หยุดทำงานและรายงานกลับทันทีเมื่อแก้บั๊กเดิมพลาดติดต่อกัน 2 รอบบน Symptom เดิม               |
+| **ความปลอดภัย**     | แก้ไข Shared API โดยไม่ตรวจสอบ Caller                         | ตรวจสอบ Caller และ Compatibility Impact ก่อนแก้ไข Shared APIs                               |
+| **ต้นทุน**          | เรียก Subagents หรือรัน Image Generation โดย Reflex ทั้งที่งานไม่จำเป็น | บังคับให้ชี้แจงเหตุผลและขออนุมัติก่อนเรียกใช้ Cost-Bearing Tools เว้นแต่ได้รับการร้องขอแล้ว |
+| **การตรวจผล**       | รายงานก้ำกึ่ง ปะปนผลทดสอบจริงกับการคาดเดา                               | แยกแยะสถานะการตรวจสอบเป็น Verified, Inferred และ Unchecked เสมอ                             |
+| **ดีไซน์ UI**       | ดีไซน์สำเร็จรูปที่ตกแต่งจัดจ้านเกินไป ทำให้ดูเป็น AI Slop                          | ควบคุม Spacing, Typography และ Controlled Color ตาม Design System                           |
 
 > [!NOTE]
-> ใช้ได้กับทุก model บน Antigravity 2.0 แนะนำ Gemini 3.5 Flash สำหรับ speed กับ quality ที่สมดุล
+> ใช้ได้กับทุก model บน Antigravity 2.0 แต่แนะนำให้ใช้ร่วมกับ Gemini 3.5 Flash เป็นหลัก เพื่อความสมดุลระหว่าง speed กับ quality
+
+### คุมทิศทาง ไม่ได้หักล้างระบบหลัก
+
+Aileron ไม่ได้แทนที่ System Harness, Tool Schemas หรือ Security Permissions ของ Antigravity แต่ใช้กฎเฉพาะที่ออกแบบมาอย่างดี และพร้อม Yield ทันทีเมื่อข้อกำหนดของระบบหรือ Runtime Constraints มีลำดับความสำคัญสูงกว่า
+
+ผลลัพธ์ที่ได้ไม่ใช่ Agent ที่เก่งน้อยลง แต่เป็น Agent ที่โฟกัสเอาพลังประมวลผลทั้งหมดไปลงกับงานที่คุณสั่งจริงๆ
 
 <p align="right">(<a href="#readme-top">กลับสู่ด้านบน</a>)</p>
 
@@ -60,22 +68,25 @@ aileron-protocol/
 
 ## การติดตั้ง
 
-เลือก deploy ได้ 2 แบบ — **Global** ใช้กับทุก project ในเครื่อง หรือ **Workspace** จำกัดเฉพาะ project นั้น
+เลือกติดตั้งแบบ **Global** เพื่อใช้กับทุก project หรือแบบ **Workspace** เพื่อจำกัดเฉพาะ project ที่ต้องการ
 
-### Global
+### Global Setup
 
-Copy `GEMINI.md` ไปวางที่
-* **Windows:** `%USERPROFILE%\.gemini\GEMINI.md`
-* **macOS / Linux:** `~/.gemini/GEMINI.md`
+Copy `Aileron/GEMINI.md` ไปวางที่:
 
-### Workspace
+- **Windows:** `%USERPROFILE%\.gemini\GEMINI.md`
+- **macOS / Linux:** `~/.gemini/GEMINI.md`
 
-นำ `GEMINI.md` ไปวางใน project ที่ต้องการ เลือกได้ 2 วิธี
-* **วิธี A:** วางที่ root ของ project ตรงๆ
-* **วิธี B:** วางใน path อื่น เช่น `.agents/rules/project-rules.md` ก็ได้
+### Workspace Setup
+
+นำ `Aileron/GEMINI.md` ไปวางใน Project เลือกได้ 2 วิธี:
+
+- **วิธี A (Project Root):** วางที่ root ของ project ตรงๆ โดยใช้ชื่อ `GEMINI.md`
+- **วิธี B (Rules Directory):** วางใต้ `.agents/rules/` และเปลี่ยนชื่อไฟล์ได้ (เช่น `aileron.md`)
 
 > [!IMPORTANT]
-> ถ้าเลือกวิธี B ต้องใส่ trigger header ไว้บนสุดของไฟล์ และเว้น 1 บรรทัดหลัง `---`
+> หากใช้วิธี B ต้องใส่ trigger header ไว้บนสุดของไฟล์ และเว้น 1 บรรทัดหลัง `---` ชุดสุดท้าย
+>
 > ```markdown
 > ---
 > trigger: always_on

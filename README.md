@@ -30,20 +30,28 @@ Vibe coding with Antigravity is powerful, but the default harness gets in the wa
 
 <br />
 
-**Aileron Protocol** is a ready-made `GEMINI.md` you drop into your project or global config. It enforces strict boundaries on how your agent plans, debugs, reads files, and writes code.
+**Aileron Protocol** is a ready-made `GEMINI.md` for Antigravity 2.0. Drop it into a project or global config to keep the native capabilities while adding sharper boundaries for planning, debugging, tool cost, code changes, verification, and frontend work.
 
 <br />
 
-| Behavior | Default Harness | With Aileron |
-| :--- | :--- | :--- |
-| **Planning** | Plans minor edits, creating unnecessary planning overhead | Skips planning on simple edits; plans only for structural risk |
-| **Context** | Scans broad directories, bloating context windows | Inspects target files first before searching |
-| **Debugging** | Retries failed fixes blindly until timeout | Stops after 2 failed cycles for human feedback |
-| **Safety** | Edits shared files speculatively, risking breakages | Checks caller files before editing shared APIs |
-| **Styling** | Spams generic gradients and saturated glassmorphism | Blocks decorative styling; enforces minimal color strategies |
+| Behavior         | Default Antigravity Experience                                        | With Aileron                                                                             |
+| :--------------- | :-------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
+| **Planning**     | Routine work can expand into unnecessary plans and artifacts          | Skips ceremony for simple work; reserves formal planning for structural risk             |
+| **Context**      | Agents may inspect broadly before narrowing the task                  | Starts from target files, nearby code, config, and repository conventions                |
+| **Debugging**    | Repeated attempts can drift into speculative patching                 | Stops after 2 failed cycles on the same symptom and reports back                         |
+| **Safety**       | Shared behavior can change before its impact is fully traced          | Identifies callers and compatibility impact before changing shared APIs                  |
+| **Cost**         | Subagents and image generation can run when direct work is enough     | Requires cost-bearing tools to be explained and approved unless already requested        |
+| **Verification** | Tested results and reasonable assumptions can blur together           | Keeps verified, inferred, and unchecked claims strictly separate                         |
+| **Styling**      | Strong decorative defaults can produce repetitive AI-style interfaces | Prioritizes project design systems, structure, typography, spacing, and controlled color |
 
 > [!NOTE]
 > Aileron is fully compatible with all models on Antigravity 2.0. We recommend Gemini 3.5 Flash for the best balance of speed and reliability.
+
+### Built to steer, not replace
+
+Aileron does not replace Antigravity's System Harness, Tool Schemas, or Security Permissions. It applies strong local preferences where the harness leaves room for judgment, and yields cleanly when a system constraint takes precedence.
+
+The result is not a less capable agent. It is an agent that spends more of its capability on the task that was actually requested.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -60,22 +68,25 @@ aileron-protocol/
 
 ## Installation
 
-You can install Aileron **globally** for all projects or **locally** for a specific workspace.
+Install Aileron **globally** for all projects or **locally** for a specific workspace.
 
 ### Global Setup
 
-Copy `GEMINI.md` to your global configuration folder.
-* **Windows:** `%USERPROFILE%\.gemini\GEMINI.md`
-* **macOS / Linux:** `~/.gemini/GEMINI.md`
+Copy `Aileron/GEMINI.md` to your global configuration folder:
+
+- **Windows:** `%USERPROFILE%\.gemini\GEMINI.md`
+- **macOS / Linux:** `~/.gemini/GEMINI.md`
 
 ### Workspace Setup
 
-Place `GEMINI.md` inside your active project directory. You have two options.
-* **Option A:** Copy the file directly to the root of your project.
-* **Option B:** Save the file in a custom directory like `.agents/rules/project-rules.md`.
+Install Aileron for a specific project using either method:
+
+- **Method A (Project Root):** Copy the protocol to the project root and keep the filename `GEMINI.md`.
+- **Method B (Rules Directory):** Save under `.agents/rules/` and change the filename as desired (e.g. `aileron.md`).
 
 > [!IMPORTANT]
-> If you choose Option B, you must add the following trigger header to the very top of the file. Ensure there is a blank line after the closing `---`.
+> Files stored under `.agents/rules/` must include the following trigger header at the very top. Leave one blank line after the closing `---`.
+>
 > ```markdown
 > ---
 > trigger: always_on
@@ -88,4 +99,4 @@ Place `GEMINI.md` inside your active project directory. You have two options.
 
 ## License
 
-This project is distributed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License**. Please see [LICENSE](LICENSE) for more details.
+This project is distributed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License**. See [LICENSE](LICENSE) for details.
