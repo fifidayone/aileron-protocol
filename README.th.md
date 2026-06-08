@@ -72,28 +72,14 @@ aileron-protocol/
 
 ### Global Setup
 
-Copy `Aileron/GEMINI.md` ไปวางที่:
+คัดลอก `Aileron/GEMINI.md` ไปวางที่:
 
 - **Windows:** `%USERPROFILE%\.gemini\GEMINI.md`
 - **macOS / Linux:** `~/.gemini/GEMINI.md`
 
 ### Workspace Setup
 
-นำ `Aileron/GEMINI.md` ไปวางใน Project เลือกได้ 2 วิธี:
-
-- **วิธี A (Project Root):** วางที่ root ของ project ตรงๆ โดยใช้ชื่อ `GEMINI.md`
-- **วิธี B (Rules Directory):** วางใต้ `.agents/rules/` และเปลี่ยนชื่อไฟล์ได้ (เช่น `aileron.md`)
-
-> [!IMPORTANT]
-> หากใช้วิธี B ต้องใส่ trigger header ไว้บนสุดของไฟล์ และเว้น 1 บรรทัดหลัง `---` ชุดสุดท้าย
->
-> ```markdown
-> ---
-> trigger: always_on
-> ---
->
-> [Rules start here...]
-> ```
+คัดลอก `Aileron/GEMINI.md` ไปวางที่ root ของ project
 
 <p align="right">(<a href="#readme-top">กลับสู่ด้านบน</a>)</p>
 

@@ -79,21 +79,7 @@ Copy `Aileron/GEMINI.md` to your global configuration folder:
 
 ### Workspace Setup
 
-Install Aileron for a specific project using either method:
-
-- **Method A (Project Root):** Copy the protocol to the project root and keep the filename `GEMINI.md`.
-- **Method B (Rules Directory):** Save under `.agents/rules/` and change the filename as desired (e.g. `aileron.md`).
-
-> [!IMPORTANT]
-> Files stored under `.agents/rules/` must include the following trigger header at the very top. Leave one blank line after the closing `---`.
->
-> ```markdown
-> ---
-> trigger: always_on
-> ---
->
-> [Rules start here...]
-> ```
+Copy `Aileron/GEMINI.md` to the project root.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
